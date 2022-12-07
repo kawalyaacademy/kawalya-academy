@@ -1,0 +1,277 @@
+* 	{font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.dropbtn {
+    background-color: #E45735;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+
+		border-radius: 3px;
+	text-transform: uppercase;
+ vertical-align: middle;
+}
+
+.drpdown {
+  position: relative;
+  display: block;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drpdown-content {
+    display: none;
+    background-color: #077907;
+    z-index: 1;
+	width:255px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.drpdown-content a {
+    padding: 9px 34px;
+    text-decoration: none;
+    display: block;
+	
+border-bottom: none;
+	transition: none;
+	font-size: 14px;
+	
+	
+}
+
+.drpdown-content a:hover {background-color: #ddd;
+
+}
+
+.drpdown:hover .drpdown-content {display: block;
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41; }
+
+.drpdown-content br {
+ display: none;
+}
+
+.dropbtn img {
+	 vertical-align: middle;
+
+padding-right: 10px;
+}
+
+
+
+
+nav{
+	height:100px;
+	width:100%;
+	background:rgb(226, 223, 223);
+
+}
+nav a{
+	margin:15px;
+	text-decoration:none;
+	text-transform:capitalize;
+	float:right;
+	padding:5px;
+	display:flex;
+	font-weight:500;
+	font-size:20px;
+	border-radius:3px;
+	margin-top:20px;
+	color:white;
+	font:bold;
+	font-size:20px;
+  background:#E45735
+}
+body{
+	margin:0;
+	padding:0;
+	background:whitesmoke;
+}
+nav a:hover{
+	  background:#2bab0d;
+}
+nav img{
+     width:100px;
+     height:100px;
+     border-radius:100%;
+     margin-left:10px;
+	
+}
+.main{
+	height:500px;
+	background:url('../images/banner.png');
+	background-position:center;
+	background-size:cover;
+  background-repeat:no-repeat;
+
+
+}
+.main h1{
+     text-transform:uppercase;
+     text-align:center;
+     color:#00ffd5;
+     font-family:sans-serif;
+     font-size:80px;
+     font-weight:500;
+	 
+}
+.top{
+	height:330px;
+	width:100%;
+	display:flex;
+	
+}
+.sub{
+	min-width:30%;
+	min-height:130px;
+	margin:25px;
+}
+.sub img{
+	min-width:100%;
+	max-height:220px;
+	justify-content:center;
+	text-align:center;
+}
+h1{
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:600;
+	text-decoration:bold;
+}
+button{
+	justify-content:center;
+	text-transform:uppercase;
+	font-weight:600;
+	color:white;
+	text-decoration:bold;
+	background:darkgoldenrod;
+}
+.sub h4,p{
+	justify-content:center;
+	text-transform:capitalize;
+	font-weight:600;
+	color:purple;
+	text-decoration:bold;
+	text-align:center;
+	line-height:0.8;
+}
+.explo{
+	text-align:center;
+}
+.explo button:hover{
+	background:blue;
+}
+footer{
+	background-color:darkgoldenrod;
+	
+	margin-bottom:0;
+	text-align:center;
+	
+}
+.content{
+    position:relative;
+    background-color: #077907;
+
+}
+
+
+.content h1{
+    position: absolute;
+    color: #fff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    font:bold;
+}
+
+.content h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #03a9f4;
+}
+
+.content h1:nth-child(2){
+    color:black
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100% );
+    }50%{
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100% );
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cont{
+  display:flex;
+  height:500px;
+}
+.contact{
+  width:30%
+  margin-left:100px;
+  margin:20px; 
+  
+  
+}
+.subcontact{
+  width:70%;
+  height:450px;
+  border:2px solid;
+  margin:40px;
+}
+
+
